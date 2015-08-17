@@ -1,0 +1,51 @@
+html {
+  font-size:            14px;
+  line-height:          1.4em;
+  background:           url('background.jpg');
+}
+.chromeCenter {
+  position:             absolute;
+  top:                  50%;
+  left:                 50%;
+  transform:            translate(-50%, -50%);
+  font:                 10vw Garamond;
+  color:                rgba(0,0,0,0.75);
+  text-shadow:          0 -.250em 0.25em  #000000,
+                        0 -.025em 0.00    #FFFFFF,
+                        0  .015em 0.00    rgba(255,255,255,0.125),
+                        0  .125em 0.50em  #000000;
+  white-space:          nowrap;
+  z-index:              -1;
+}
+.chromeCenter:after {
+  position:             absolute;
+  left:                 0;
+  height:               50%;
+  content:              attr(data-text);
+  color:                rgba(255,255,255,.5);
+  text-shadow:          none;
+  overflow:             hidden;
+}
+.info, .repos {
+  display:              inline-block;
+  vertical-align:       top;
+  min-height:           5em;
+  margin:               1em;
+  padding:              1em;
+  border-radius:        5px;
+  background:           #D2B48C;
+  box-shadow:           inset 3px 3px 5px rgba(0,0,0,0.8);
+}
+.info   { width:        60%;      }
+.repos  { width:        33%;      }
+a       { color:        #333333;  }
+
+ul {
+  margin:               0 0 0 5px;
+  padding:              0;
+  list-style:           none;
+}
+
+li {
+  padding:              2px 0;
+}
